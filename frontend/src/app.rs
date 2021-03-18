@@ -22,7 +22,10 @@ impl Component for App {
 
     fn view(&self) -> Html {
         html! {
-            <p>{ "Hello world!" }</p>
+        <div class="flex justify-center w-full border-2">
+                    <h1>{ "Hello world!" }</h1>
+        </div>
         }
     }
 }
+

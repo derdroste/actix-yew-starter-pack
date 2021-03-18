@@ -9,7 +9,10 @@
     "build:js": "rollup ./main.js --format iife --file ../public/pkg/bundle.js",
     "build:scss": "node-sass --include-path scss styles/styles.scss ../public/styles/styles.css",
     "build:css": "postcss --use autoprefixer -o ../public/styles/styles.css ../public/styles/styles.css",
-    "build:style": "run-s build:scss build:css"
+    "build:style": "run-s build:scss build:css",
+    "watch:js": "rollup ./main.js --format iife --file ../public/pkg/bundle.js -w",
+    "watch:tailwind": "cd tailwind-yew-builder && docker-compose up watch",
+    "watch:rust": "cargo watch -s 'npm run build:rust'"
   },
   "keywords": [],
   "author": "",
@@ -18,19 +21,13 @@
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "autoprefixer": "^10.2.5",
-    "node-sass": "^5.0.0",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.8",
-    "postcss-cli": "^8.3.1",
     "rollup": "^2.41.5",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-uglify": "^6.0.4",
     "rollup-plugin-wasm": "^3.0.0",
     "serve": "^11.3.2"
-  },
-  "dependencies": {
-    "postcss-load-config": "^3.0.1"
   }
 }
