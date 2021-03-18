@@ -1,0 +1,1 @@
+/Users/lukas.droste/actix-test/frontend/target/wasm32-unknown-unknown/release/yew_wasm_pack_minimal.wasm: /Users/lukas.droste/actix-test/frontend/src/app.rs /Users/lukas.droste/actix-test/frontend/src/lib.rs build.rs

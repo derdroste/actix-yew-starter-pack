@@ -1,0 +1,1 @@
+{"rustc":12837389265337637431,"features":"[]","target":2547480327296159915,"profile":4339006351771724982,"path":1036222786711178230,"deps":[[13780725060622035925,"actix_web",false,14591207222248679974]],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/actix-test-c62cb15d62488dda/dep-bin-actix-test"}}],"rustflags":[],"metadata":12746014079432890631,"config":0}
